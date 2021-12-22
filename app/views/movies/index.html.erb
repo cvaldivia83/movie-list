@@ -1,1 +1,8 @@
 <h1>Movie Index</h1>
+<% @movies.each do |element| %>
+  <p> <%= element.title %> </p>
+  <p> <%= element.overview %> </p>
+  <p> <%= element.tagline %> </p>
+  <p> <%= element.genre %> </p>
+  <p> <%= element.rating %> </p>
+<% end %>
