@@ -1,1 +1,12 @@
 <h1>List Edit</h1>
+
+<%= simple_form_for [@list] do |f| %>
+<%= f.input :name, placeholder: 'What is the new name of your list?' %>
+<%= f.button :submit %>
+<% end %>
+
+<h2>Choose a movie to add to your list!</h2>
+
+<% @movies.each do |element| %>
+  <p> <%= element.title %> </p>
+<% end %>

@@ -1,1 +1,7 @@
 <h1>List Show</h1>
+
+<% @list.movies.each do |element|  %>
+  <p> <%= element.title %> </p>
+  <p> <%= element.tagline %> </p>
+  <p> <%= element.rating %> </p>
+<% end %>

@@ -3,9 +3,15 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   # movies routes
-  resources :movies, only: [:index, :show, :new, :create]
+  resources :movies, only: [:index, :show, :new, :create] do
+    resources :reviews, only: [:create]
+  end
 
-  resources :lists
+  resources :lists do
+    resources :bookmarks, only: [:create]
+  end
+
+  resources :blogs
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
