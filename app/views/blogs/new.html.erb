@@ -1,1 +1,8 @@
 <h1>Blog new</h1>
+
+<%= simple_form_for [@controller] do |f| %>
+  <%= f.input :title, placeholder: 'Post Title' %>
+  <%= f.input :content, placeholder: 'Write your content here' %>
+  <%= f.input :photo, as: :file %>
+  <%= f.button :submit %>
+<% end %>

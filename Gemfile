@@ -26,6 +26,8 @@ gem 'devise'
 gem 'pundit'
 # Use dotenv to hide our api keys
 gem 'dotenv-rails', groups: [:development, :test]
+# Add cloudinary to store images and media
+gem 'cloudinary', '~> 1.16.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
