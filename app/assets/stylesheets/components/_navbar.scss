@@ -1,12 +1,87 @@
-.navbar-lewagon {
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  margin-left: 2rem;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.logo-image {
+  font-size: 2rem;
+  color: $dark-grey;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.menu {
+   &-image-blob {
+      width: 30%;
+      position: absolute;
+      z-index: -1;
+      right: 1px;
+   }
+   &-list-sign-in {
+     list-style: none;
+     margin-right: 1rem;
+   }
+   &-item-sign-in {
+     display: inline-block;
+     margin: 0 1.2rem;
+   }
+   &-link {
+     text-decoration: none;
+     color: $black;
+   }
+   &-login {
+     text-decoration: none;
+     color: $light-gray;
+     margin-left: 1.2rem;
+   }
+   &-sandwich-mb {
+     display: none;
+     width: 35px;
+   }
+   &-list-sign-in-mb {
+     display: none;
+    list-style: none;
+   }
+}
+
+.dropdown {
+  &-item {
+    text-decoration: none;
+    color: $black;
+  }
+  &-login {
+    text-decoration: none;
+    color: $grass-green;
+  }
+}
+
+
+
+// media-queries
+
+@media (max-width: 425px) {
+  .navbar {
+    width: 145%;
+    margin-top: 8px;
+  }
+  .menu {
+    &-list-sign-in {
+      display: none;
+    }
+    &-image {
+      display: none;
+    }
+
+    &-sandwich-mb {
+      display: inline;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    width: 139%;
+  }
 }

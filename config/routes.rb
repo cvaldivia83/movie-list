@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
+  # landing page after sign in
+  get '/welcome', to: 'pages#welcome'
+
   # movies routes
   resources :movies, only: [:index, :show, :new, :create] do
     resources :reviews, only: [:create]

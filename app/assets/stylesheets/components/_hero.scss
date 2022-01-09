@@ -1,0 +1,99 @@
+.hero {
+  // height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 42px 36px;
+  &-text {
+    margin-left: 52px;
+  }
+  &-title {
+    @include main-title;
+    margin: 0 0 32px 24px;
+  }
+  &-paragraph {
+    font-size: 1.2rem;
+    width: 400px;
+    margin: 0 0 12px 24px;
+  }
+  &-sign-up {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: $dark-orange;
+    color: $white;
+    border-radius: 4px;
+    margin-left: 48px;
+    display: inline-block;
+    margin-top: 16px;
+  }
+  &-image-svg {
+    width: 240px;
+    margin-right: 54px;
+    padding-top: 12px;
+  }
+  &-rating {
+    display: flex;
+    margin-left: 80px;
+  }
+  &-rating-svg {
+    width: 104px;
+    margin-right: 16px;
+  }
+}
+
+.orange-blob {
+  width: 10%;
+  position: absolute;
+  z-index: -1;
+}
+
+.yellow-blob {
+  width: 16%;
+  position: absolute;
+  left: 822px;
+  bottom: 74px;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &-image-svg {
+      margin-right: 0;
+    }
+  }
+  .orange-blob {
+    width: 14%;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    &-image-svg {
+      display: none;
+    }
+  }
+  .yellow-blob {
+    width: 30%;
+    left: 500px;
+    bottom: 15px;
+  }
+  .orange-blob {
+    width: 25%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    margin: 42px 16px;
+    &-rating {
+      margin-left: 30px;
+    }
+    &-text {
+      margin-left: 0;
+    }
+  }
+  .yellow-blob {
+    left: 380px;
+    bottom: 20px;
+  }
+}

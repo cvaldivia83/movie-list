@@ -1,1 +1,311 @@
 // Specific CSS for your home-page
+
+
+.home-paragraph {
+  text-align: center;
+  margin: 36px 0;
+  @include paragraph;
+}
+
+.cards-data {
+  @include flex-center;
+}
+
+.secondary-title {
+  text-align: center;
+  margin: 56px 0;
+}
+
+.blue-block {
+  background-color: $light-blue;
+  width: 1200px;
+  height: 930px;
+  position: absolute;
+  z-index: -2;
+  top: 640px;
+}
+
+.light-blue-blob {
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 510px;
+}
+
+.gold-blob {
+  width: 18%;
+  position: absolute;
+  z-index: -1;
+  left: 825px;
+  top: 920px;
+}
+
+.cards-works {
+  @include flex-center;
+  flex-direction: column;
+}
+
+hr {
+  width: 80%;
+  margin-top: 88px;
+  background-color: $light-gray;
+}
+
+.home-testimonies {
+  display: flex;
+  @include flex-around;
+  &-text {
+    width: 420px;
+  }
+  &-title {
+    font-size: 2rem;
+  }
+  &-button {
+    width: 50px;
+    margin: 0 8px;
+  }
+}
+
+.users-wrapper {
+  margin: 24px 0 30px 24px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+}
+
+.users {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+  display: flex;
+  overflow-x: scroll;
+  transform-style: preserve-3d;
+}
+
+.orange-blob-bottom {
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 394px;
+  bottom: -1520px;
+}
+
+.green-block {
+  position: relative;
+  top: 425px;
+  background-color: $dark-green;
+  width: 100vw;
+  height: 481px;
+  &-title {
+    text-align: center;
+    color: $white;
+    @include secondary-title;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+    padding: 54px;
+  }
+}
+
+.faqs {
+  @include flex-center;
+  flex-direction: column;
+}
+
+.dark-green-blob {
+  width: 50%;
+  position: absolute;
+  right: 640px;
+}
+
+.call-action {
+  width: 100vw;
+  height: 350px;
+  position: relative;
+  top: 425px;
+  &-paragraph {
+    text-align: center;
+    color: $medium-gray;
+    font-weight: 600;
+    padding: 36px;
+  }
+  &-title {
+    text-align: center;
+    font-size: 1.85rem;
+    width: 280px;
+    margin: 0 auto;
+  }
+  &-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+  }
+}
+
+.vertical-gold-blob {
+  width: 36%;
+  position: absolute;
+  top: -16px;
+  right: -30px;
+}
+
+@media (max-width: 768px) {
+  .home-testimonies {
+    &-title {
+      font-size: 1.7rem;
+    }
+  }
+  .dark-green-blob {
+    right: 530px;
+    bottom: 1px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home {
+    width: 660px;
+  }
+  .light-blue-blob {
+    width: 100%;
+  }
+  .gold-blob {
+    width: 20%;
+    left: 590px;
+    top: 1090px;
+  }
+
+  .orange-blob-bottom {
+    width: 80%;
+    left: 224px;
+    bottom: -1670px;
+  }
+  .green-block {
+    width: 660px;
+    &-title {
+      font-size: 2.4rem;
+    }
+  }
+  .users {
+    gap: 12px;
+  }
+  .faq-card-wrapper {
+    width: 500px;
+  }
+  .dark-green-blob {
+    width: 60%;
+    right: 400px;
+    bottom: 0px;
+  }
+  .call-action {
+    width: 660px;
+  }
+}
+
+@media (max-width: 375px) {
+  .yellow-blob {
+    left: 450px;
+  }
+  .home {
+    width: 582px;
+    &-testimonies-text {
+      width: 360px;
+    }
+  }
+  .user {
+    width: 240px;
+    height: 270px;
+    &-name {
+      margin-bottom: 0;
+    }
+    &-image--corina {
+      width: 241px;
+      height: 181px;
+    }
+    &-image--jessica {
+      width: 241px;
+      height: 181px;
+    }
+    &-image--rodrigo {
+      width: 241px;
+      height: 181px;
+    }
+    &-image--andre {
+      width: 241px;
+      height: 181px;
+    }
+    &-image--leo {
+      width: 241px;
+      height: 181px;
+    }
+    &-image--josephine {
+      width: 241px;
+      height: 181px;
+    }
+    &-quote-right {
+      margin-left: 210px;
+    }
+  }
+  .green-block {
+    width: 580px;
+    top: 355px;
+  }
+  .orange-blob-bottom {
+    bottom: -1600px;
+    left: 184px;
+  }
+  .gold-blob {
+    width: 30%;
+    left: 488px;
+    top: 1030px;
+  }
+  .call-action {
+    top: 355px;
+    width: 580px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home {
+    width: 480px;
+  }
+  .yellow-blob {
+    left: 370px;
+  }
+  .gold-blob {
+    left: 400px;
+    width: 32%;
+  }
+  .home-testimonies {
+    &-text {
+      width: 300px;
+    }
+    &-title {
+      font-size: 1.3rem;
+    }
+  }
+  .green-block {
+    width: 480px;
+  }
+  .faq-card-wrapper {
+    width: 430px;
+  }
+  .dark-green-blob {
+    right: 260px;
+  }
+  .orange-blob-bottom {
+    bottom: -1485px;
+  }
+  hr {
+    margin-top: 48px;
+  }
+  .call-action {
+    width: 480px;
+  }
+  .cards-data {
+    margin: 0 8px;
+  }
+  .home-card {
+    margin: 8px 4px;
+  }
+}

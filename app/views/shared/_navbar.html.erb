@@ -1,35 +1,49 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-  <% end %>
+<div class="navbar">
+  <div class="logo">
+    <%= link_to "root_path", class: "#" do %>
+      <span class="logo-image"><i class="fas fa-film"></i></span>
+    <% end %>
+  </div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="menu">
+    <div class="menu-image">
+      <img src="https://res.cloudinary.com/rent-an-instrument/image/upload/v1640895280/green_blob_vvhgnr.svg" alt="green-blob" class="menu-image-blob">
+    </div>
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= cl_image_tag @user.photo.key, height: 40, width: 40, crop: :fill, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
+        <ul class="menu-list">
+          <li class="menu-item">Movies</li>
+          <li class="menu-item">Blog</li>
+          <li class="menu-item"><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+
+            <img src="https://res.cloudinary.com/rent-an-instrument/image/upload/v1640900738/sandwich_menu_ey8bcv.svg" alt="menu-sandwich-lg" style="width: 40px">
+            <div class="menu-dropdown">
+              <%= link_to "Profile", "#", class: "dropdown-item" %>
+              <%= link_to "Chat", "#", class: "dropdown-item" %>
+              <%= link_to "My Movies", "#", class: "dropdown-item" %>
+              <%= link_to "My Lists", "#", class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        </ul>
       <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
+
+        <ul class="menu-list-sign-in">
+          <li class="menu-item-sign-in"><%= link_to "Movies", movies_path, class: "menu-link" %></li>
+          <li class="menu-item-sign-in"><%= link_to "Blog", blogs_path, class: "menu-link" %></li>
+          <li class="menu-item-sign-in menu-grey"><%= link_to "Sign In", new_user_session_path, class: "menu-login" %></li>
+        </ul>
+
+
+            <img src="https://res.cloudinary.com/rent-an-instrument/image/upload/v1640900738/sandwich_menu_ey8bcv.svg" alt="menu-sandwich" class="menu-sandwich-mb">
+            <div class="menu-dropdown">
+              <ul class="menu-list-sign-in-mb">
+
+                <li><%= link_to "Sign In", new_user_session_path, class: "dropdown-login" %>
+                <li><%= link_to "Movies", "#", class: "dropdown-item" %>
+                <li><%= link_to "Blog", "#", class: "dropdown-item" %>
+              </ul>
+            </div>
       <% end %>
-    </ul>
+
   </div>
 </div>

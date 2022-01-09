@@ -1,0 +1,53 @@
+// Mixins
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+@mixin main-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+@mixin secondary-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+@mixin paragraph {
+  font-family: $body-font;
+  font-size: 1.2rem;
+}
+
+@mixin container {
+  margin: 0 56px 0 56px;
+}
+
+@mixin user-card {
+  width: 281px;
+  height: 211px;
+  border-radius: 4px 4px 0 0;
+  background-position: center;
+  background-size: cover;
+}

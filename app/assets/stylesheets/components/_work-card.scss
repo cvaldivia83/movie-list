@@ -1,0 +1,59 @@
+.card-work {
+  width: 660px;
+  height: 130px;
+  background-color: $white;
+  margin: 16px 0;
+  box-shadow: 0 4px 16px $gray;
+  border-radius: 4px;
+  @include flex-between;
+  &-svg {
+    font-size: 48px;
+    color: $light-orange;
+  }
+  &-svg.sign-in {
+    color: $grass-green;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 21px;
+  }
+  &-image {
+    margin-left: 48px;
+  }
+  &-text {
+    margin-right: 148px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-work {
+    width: 600px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-work {
+    width: 520px;
+    &-image {
+      margin-left: 12px;
+    }
+    &-text {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .card-work {
+    width: 440px;
+  }
+  .card-work-image {
+    margin-left: 24px;
+  }
+  .card-work-text {
+    margin-right: 20px;
+  }
+  .gold-blob {
+    left: 400px;
+  }
+}

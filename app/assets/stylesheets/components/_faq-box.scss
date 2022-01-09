@@ -1,0 +1,33 @@
+.faq-card {
+  @include flex-around;
+
+  &-wrapper {
+    width: 55vw;
+    height: 70px;
+    background-color: $medium-green;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 8px 0;
+  }
+  &-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $white;
+  }
+  &-title.second {
+    margin-right: 36px;
+  }
+   &-arrow {
+    color: $white;
+    font-size: 1.25rem;
+  }
+  &-answer {
+    margin-left: 40px;
+  }
+  &-paragraph {
+    color: $light-gray;
+    display: none;
+  }
+}
