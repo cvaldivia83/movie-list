@@ -30,30 +30,30 @@
 .user-image {
   &--corina {
     @include user-card;
-    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1640895310/portrait-2_xbwcrw.jpg');
+    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1641774347/portrait-2_vftdvx.webp');
   }
   &--jessica {
     @include user-card;
     background-position: initial;
-    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1640895309/portrait-1_sqkz7d.jpg');
+    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1641774346/portrait-1_muiqts.webp');
   }
   &--rodrigo {
     @include user-card;
     background-position-y: 15%;
-    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1640895312/portrait-5_rnx5xg.jpg');
+    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1641774347/portrait-5_lxkyvm.webp');
   }
   &--andre {
     @include user-card;
     background-position-y: 15%;
-    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1623880260/1fncs8k2ykktzozjjbevd05cfkh6.jpg');
+    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1641774552/portrait-6_x3kder.webp');
   }
   &--leo {
     @include user-card;
-    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1640895313/portrait-3_qrw8kc.jpg');
+    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1641774347/portrait-3_tjz3ip.webp');
   }
   &--josephine {
     @include user-card;
     background-position-y: 20%;
-    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1640895318/portrait-4_vyhlbv.jpg');
+    background-image: url('https://res.cloudinary.com/rent-an-instrument/image/upload/v1641774348/portrait-4_uzykbg.webp');
   }
 }

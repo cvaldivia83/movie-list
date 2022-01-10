@@ -8,7 +8,9 @@
 }
 
 .cards-data {
-  @include flex-center;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .secondary-title {
@@ -19,7 +21,7 @@
 .blue-block {
   background-color: $light-blue;
   width: 1200px;
-  height: 930px;
+  height: 850px;
   position: absolute;
   z-index: -2;
   top: 640px;
@@ -36,7 +38,7 @@
   width: 18%;
   position: absolute;
   z-index: -1;
-  left: 825px;
+  left: 840px;
   top: 920px;
 }
 
@@ -88,7 +90,7 @@ hr {
   position: absolute;
   z-index: -1;
   left: 394px;
-  bottom: -1520px;
+  bottom: -1470px;
 }
 
 .green-block {
@@ -309,3 +311,47 @@ hr {
     margin: 8px 4px;
   }
 }
+
+// animation sarthology fadeinDown
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+// animation sarthology fadeinDown
