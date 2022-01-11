@@ -1,22 +1,23 @@
 .home-card {
-  width: 210px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border: 1px solid $gray;
   border-radius: 4px;
-  margin: 8px 24px;
+  margin: 8px 24px 0 24px;
   background-color: $white;
   &-number {
     color: $grass-green;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 0;
+    margin: 16px 0 0 0;
   }
   &-state {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 24px;
   }
   &-image {
     color: #F2F2F2;
