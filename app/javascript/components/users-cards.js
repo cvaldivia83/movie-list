@@ -4,7 +4,7 @@ const initActivateUsersButtons = () => {
   const cardUser = document.getElementById('user-card');
 
   rightBtn.addEventListener('click', event => {
-    cardUser.style.transform = 'translate3d(-980px, 0px, 0px)';
+    cardUser.style.transform = 'translate3d(-1086px, 0px, 0px)';
     cardUser.style.transitionDuration = "0.6s";
   })
 

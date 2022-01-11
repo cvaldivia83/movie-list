@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100vw;
   margin: 42px 36px;
   &-text {
     margin-left: 112px;
@@ -151,6 +151,9 @@
   .hero {
     &-image-svg {
       margin-right: 0;
+    }
+    &-title {
+        font-size: 4.2rem;
     }
   }
   .orange-blob {
