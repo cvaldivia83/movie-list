@@ -2,8 +2,9 @@
   @include flex-around;
 
   &-wrapper {
-    width: 55vw;
-    height: 70px;
+    width: 50vw;
+    // height: 70px;
+    padding: 8px;
     background-color: $medium-green;
     border-radius: 8px;
     display: flex;
@@ -30,4 +31,17 @@
     color: $light-gray;
     display: none;
   }
+}
+
+.active-box {
+  background-color: $white;
+  height: 100px;
+  color: $dark-green;
+  display: initial;
+  transition-duration: 0.8s;
+}
+
+.active-text {
+  color: $dark-green;
+  display: initial;
 }

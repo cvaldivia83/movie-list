@@ -1,5 +1,8 @@
 // Specific CSS for your home-page
-
+.home {
+  width: 100%;
+  overflow: hidden;
+}
 
 .home-paragraph {
   text-align: center;
@@ -20,7 +23,7 @@
 
 .blue-block {
   background-color: $light-blue;
-  width: 1200px;
+  width: 100%;
   height: 850px;
   position: absolute;
   z-index: -2;
@@ -81,8 +84,9 @@ hr {
   margin-right: auto;
   gap: 24px;
   display: flex;
-  overflow-x: scroll;
+  overflow: hidden;
   transform-style: preserve-3d;
+  transition-timing-function: linear;
 }
 
 .orange-blob-bottom {
@@ -119,11 +123,12 @@ hr {
   width: 50%;
   position: absolute;
   right: 640px;
+  bottom: 1px;
 }
 
 .call-action {
   width: 100vw;
-  height: 350px;
+  height: 740px;
   position: relative;
   top: 425px;
   &-paragraph {

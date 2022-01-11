@@ -3,15 +3,19 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 
+
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
 
 
 // ----------------------------------------------------
@@ -20,13 +24,15 @@ ActiveStorage.start()
 // ----------------------------------------------------
 
 // External imports
+const _ = require('lodash');
 
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initActivateCardData } from '../components/cards-data';
 import { initActivateUsersButtons } from '../components/users-cards';
-import { initActivateWorkCards } from "../components/work-cards"
+import { initActivateWorkCards } from "../components/work-cards";
+import { initActivateFaqCards } from "../components/faq-cards";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -34,4 +40,5 @@ document.addEventListener('turbolinks:load', () => {
   initActivateCardData();
   initActivateWorkCards();
   initActivateUsersButtons();
+  initActivateFaqCards();
 });
