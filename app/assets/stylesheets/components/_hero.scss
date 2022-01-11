@@ -6,7 +6,8 @@
   width: 90%;
   margin: 42px 36px;
   &-text {
-    margin-left: 52px;
+    margin-left: 112px;
+    padding-top: 40px;
   }
   &-title {
     @include main-title;
@@ -28,8 +29,8 @@
     margin-top: 16px;
   }
   &-image-svg {
-    width: 240px;
-    margin-right: 54px;
+    width: 270px;
+    margin-right: 104px;
     padding-top: 12px;
   }
   &-rating {
@@ -52,7 +53,7 @@
   width: 16%;
   position: absolute;
   left: 822px;
-  bottom: 74px;
+  bottom: -26px;
   z-index: -1;
 }
 
