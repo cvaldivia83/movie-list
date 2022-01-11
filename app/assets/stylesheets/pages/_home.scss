@@ -26,7 +26,7 @@
 .blue-block {
   background-color: $light-blue;
   width: 100%;
-  height: 900px;
+  height: 940px;
   position: absolute;
   z-index: -2;
   top: 640px;
@@ -60,7 +60,8 @@ hr {
 
 .home-testimonies {
   display: flex;
-  @include flex-around;
+  @include flex-between;
+  margin: 0 24px 0 116px;
   &-text {
     width: 420px;
   }
