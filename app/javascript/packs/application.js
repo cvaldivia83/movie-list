@@ -37,8 +37,8 @@ import { initActivateFaqCards } from "../components/faq-cards";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  initActivateCardData();
-  initActivateWorkCards();
-  initActivateUsersButtons();
-  initActivateFaqCards();
+  // initActivateCardData();
+  // initActivateWorkCards();
+  // initActivateUsersButtons();
+  // initActivateFaqCards();
 });

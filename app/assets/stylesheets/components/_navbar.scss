@@ -1,90 +1,127 @@
 .navbar {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.blob {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 2.5rem;
+  justify-content: flex-end;
+}
+.blob > img {
+  position: absolute;
+  z-index: -1;
 }
 
-.logo-image {
-  font-size: 2rem;
-  color: $dark-grey;
+.menu-image-blob {
+  width: 40%;
 }
 
-.menu {
-   &-image-blob {
-      width: 30%;
-      position: absolute;
-      z-index: -1;
-      right: 1px;
-   }
-   &-list-sign-in {
-     list-style: none;
-     margin-right: 1rem;
-   }
-   &-item-sign-in {
-     display: inline-block;
-     margin: 0 1.2rem;
-     font-size: 1.2rem;
-   }
-   &-link {
-     text-decoration: none;
-     color: $black;
-   }
-   &-login {
-     text-decoration: none;
-     color: $light-gray;
-     margin-left: 1.2rem;
-     font-size: 1.2rem;
-   }
-   &-sandwich-mb {
-     display: none;
-     width: 35px;
-   }
-   &-list-sign-in-mb {
-     display: none;
-    list-style: none;
-   }
-}
-
-.dropdown {
+.list-inline {
+  list-style: none;
+  padding: 0;
+  text-align: right;
   &-item {
-    text-decoration: none;
-    color: $black;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    display: inline-block;
   }
   &-login {
     text-decoration: none;
-    color: $grass-green;
+    margin-left: 3rem;
+    color: $medium-gray;
   }
 }
 
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
 
+@media (max-width: 1440px) {
+  .navbar {
+    max-width: 1440px;
+  }
+  .list-inline {
+    &-item {
+      font-size: 1.4rem;
+    }
+    &-login {
+      margin-left: 3rem;
+    }
+  }
+}
 
-// media-queries
+@media (max-width: 768px) {
+  .navbar {
+    max-width: 768px;
+  }
+  .list-inline {
+    &-item {
+      font-size: 1.3rem;
+    }
+    &-login {
+      margin-left: 2rem;
+    }
+  }
+}
 
 @media (max-width: 425px) {
   .navbar {
-    width: 145%;
-    margin-top: 8px;
+    max-width: 425px;
   }
-  .menu {
-    &-list-sign-in {
-      display: none;
-    }
-    &-image {
-      display: none;
-    }
+  .blob {
+    display: none;
+  }
+  .menu.lg {
+    display: none;
+  }
+}
 
-    &-sandwich-mb {
-      display: inline;
-      margin-right: 1rem;
-      margin-top: 0.5rem;
-    }
+@media (max-width: 375px) {
+  .navbar {
+    max-width: 375px;
+  }
+  .blob {
+    display: none;
+  }
+  .menu.lg {
+    display: none;
   }
 }
 
 @media (max-width: 320px) {
   .navbar {
-    width: 139%;
+    max-width: 320px;
   }
+  .blob {
+    display: none;
+  }
+  .menu.lg {
+    display: none;
+  }
+}
+
+// iPad Pro portrait and landscape
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar {
+      min-width: 1024px;
+      max-width: 1366px;
+    }
+}
+
+// Galaxy tabs Portrait and Landscape
+
+@media
+  (min-device-width: 800px)
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar {
+      min-width: 800px;
+      max-width: 1280px;
+    }
 }
